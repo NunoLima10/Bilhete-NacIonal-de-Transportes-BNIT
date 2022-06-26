@@ -8,13 +8,13 @@ public abstract class BIU {
     public static int code = 1;
     public static int validTime = 1;
 
-    private final int codeBIU;
-    private final LocalDate date;
-    private LocalDate expirationDate;
-    private double balance;
-    private final String validationKey;
+    final int codeBIU;
+    final LocalDate date;
+     LocalDate expirationDate;
+    double balance;
+    final String validationKey;
 
-    private Holder holder;
+    final Holder holder;
 
 
 
@@ -56,11 +56,11 @@ public abstract class BIU {
         return balance;
     }
 
-    public void setBalance(double balance) {
-        this.balance = balance;
+    public void chargeBalance(double balance) {
+        this.balance += balance;
     }
 
-    public String generateKey(){
+    private String generateKey(){
 
         String holderFirstName = this.holder.getFirstName().toLowerCase();
         String holderLastName = this.holder.getLastName().toLowerCase();
@@ -79,9 +79,9 @@ public abstract class BIU {
         return firstName + lastName + date + code;
 
     }
-    private  boolean isExpired(){
+    public   boolean isExpired(){
         LocalDate data = LocalDate.now();
-        return data.isBefore(this.expirationDate);
+        return data.isAfter(this.expirationDate);
     }
 
 

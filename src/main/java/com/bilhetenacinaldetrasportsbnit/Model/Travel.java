@@ -1,23 +1,12 @@
 package com.bilhetenacinaldetrasportsbnit.Model;
 
 public abstract class Travel {
-    private final String code;
-    private String state;
-    private Operator operator;
+    public String code;
+    public String state;
+    public Operator operator;
 
+    public abstract String generateCode();
 
-    public Travel(String state) {
-        this.state = state;
-        this.code = generateCode();
-    }
-    public Travel() {
-        this.code = generateCode();
-    }
-
-    public String generateCode(){
-        return "Code Generated";
-
-    }
 
     public void setState(String state) {
         this.state = state;
@@ -29,5 +18,9 @@ public abstract class Travel {
 
     public Operator getOperator() {
         return operator;
+    }
+
+    public String getCode() {
+        return code;
     }
 }

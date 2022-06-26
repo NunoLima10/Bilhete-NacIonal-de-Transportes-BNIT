@@ -1,4 +1,7 @@
-package com.bilhetenacinaldetrasportsbnit.Model;
+package com.bilhetenacinaldetrasportsbnit.Model.interfaces;
+
+import com.bilhetenacinaldetrasportsbnit.Model.Transactions;
+import com.bilhetenacinaldetrasportsbnit.Model.enumerations.Statute;
 
 import java.util.ArrayList;
 

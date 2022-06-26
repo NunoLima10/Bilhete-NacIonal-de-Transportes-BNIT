@@ -1,5 +1,8 @@
 package com.bilhetenacinaldetrasportsbnit.Model;
 
+import com.bilhetenacinaldetrasportsbnit.Model.enumerations.Statute;
+import com.bilhetenacinaldetrasportsbnit.Model.interfaces.Partner;
+
 public class Holder implements Partner {
     private String firstName;
     private String lastName;

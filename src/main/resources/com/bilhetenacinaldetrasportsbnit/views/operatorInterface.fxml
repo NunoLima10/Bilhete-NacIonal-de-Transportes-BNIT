@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: E0F7FF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bilhetenacinaldetrasportsbnit.Controller.OperationInterfaceController">
+   <children>
+      <VBox layoutX="14.0" prefHeight="720.0" prefWidth="1080.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="56.0" prefWidth="1080.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="56.0" prefWidth="1089.0">
+                     <children>
+                        <Pane prefHeight="56.0" prefWidth="394.0">
+                           <children>
+                              <Circle fill="#63bbd1" layoutX="47.0" layoutY="28.0" radius="22.0" stroke="#0000004a" strokeType="INSIDE" />
+                              <Label fx:id="nameOperator" layoutX="85.0" layoutY="14.0" prefHeight="28.0" prefWidth="309.0" text="Nome" textFill="#63bbd1">
+                                 <font>
+                                    <Font name="Verdana Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <MenuButton alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="672.0" style="-fx-background-color: A5ECFE;" text="Agendar Viagens" textFill="#63bbd1">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                           <font>
+                              <Font name="Verdana Bold" size="19.0" />
+                           </font>
+                        </MenuButton>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="665.0" prefWidth="1080.0">
+               <children>
+                  <ListView fx:id="TravelListView" prefHeight="665.0" prefWidth="392.0" />
+                  <VBox alignment="CENTER" prefHeight="170.0" prefWidth="689.0">
+                     <children>
+                        <VBox prefHeight="71.0" prefWidth="689.0">
+                           <children>
+                              <Label text="Estado" textFill="#63bbd1">
+                                 <font>
+                                    <Font name="Verdana Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Label>
+                              <TextField fx:id="StateBox" prefHeight="35.0" prefWidth="640.0" style="-fx-background-color: A5ECFE;">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="40.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children></VBox>
+                        <VBox prefHeight="117.0" prefWidth="689.0">
+                           <children>
+                              <Label text="Partida" textFill="#63bbd1">
+                                 <font>
+                                    <Font name="Verdana Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets top="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="departureLocationBox" prefHeight="35.0" prefWidth="640.0" style="-fx-background-color: A5ECFE;">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="40.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="128.0" prefWidth="689.0">
+                           <children>
+                              <Label text="Destino" textFill="#63bbd1">
+                                 <font>
+                                    <Font name="Verdana Bold" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets top="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="arrivalLocationBox" prefHeight="35.0" prefWidth="640.0" style="-fx-background-color: A5ECFE;">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="40.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                        <HBox prefHeight="134.0" prefWidth="689.0">
+                           <children>
+                              <GridPane prefHeight="95.0" prefWidth="698.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Label text="Data de  partida" textFill="#63bbd1">
+                                             <font>
+                                                <Font name="Verdana Bold" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <DatePicker fx:id="departureDateBox" prefHeight="39.0" prefWidth="174.0" promptText="Insira uma data" style="-fx-background-color: A5ECFE;">
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                          </DatePicker>
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets top="20.0" />
+                                       </GridPane.margin>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                       <children>
+                                          <Label text="Data de chegada" textFill="#63bbd1">
+                                             <font>
+                                                <Font name="Verdana Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <DatePicker fx:id="arrivalDateBox" prefHeight="42.0" prefWidth="174.0" promptText="Insira uma data">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin></DatePicker>
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets top="20.0" />
+                                       </GridPane.margin>
+                                    </VBox>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </HBox>
+                        <VBox alignment="CENTER" prefHeight="163.0" prefWidth="689.0">
+                           <children>
+                              <Label fx:id="labelErro" textFill="#f80808">
+                                 <font>
+                                    <Font name="Verdana Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="50.0" left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Button fx:id="removeButton" alignment="CENTER" mnemonicParsing="false" onAction="#delete" prefHeight="45.0" prefWidth="132.0" style="-fx-background-color: A5ECFE;" text="Apagar" textFill="#63bbd1">
+                                       <font>
+                                          <Font name="Verdana Bold" size="19.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="editrButton" alignment="CENTER" disable="true" layoutX="289.0" layoutY="35.0" mnemonicParsing="false" onAction="#edit" prefHeight="45.0" prefWidth="132.0" style="-fx-background-color: A5ECFE;" text="Editar" textFill="#63bbd1">
+                                       <font>
+                                          <Font name="Verdana Bold" size="19.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="CreateTravelButton" alignment="CENTER" layoutX="375.0" layoutY="35.0" mnemonicParsing="false" onAction="#registerTravel" prefHeight="45.0" prefWidth="132.0" style="-fx-background-color: A5ECFE;" text="Criar" textFill="#63bbd1">
+                                       <font>
+                                          <Font name="Verdana Bold" size="19.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children></HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

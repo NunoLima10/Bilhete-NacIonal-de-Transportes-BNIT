@@ -1,4 +1,6 @@
-package com.bilhetenacinaldetrasportsbnit.Model;
+package com.bilhetenacinaldetrasportsbnit.Model.interfaces;
+
+import com.bilhetenacinaldetrasportsbnit.Model.IslandTravel;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
